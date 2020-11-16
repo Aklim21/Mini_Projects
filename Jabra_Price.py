@@ -12,7 +12,7 @@ URL = "https://www.amazon.co.uk/gp/product/B086ZF2DVN/ref=ox_sc_act_title_1?smid
 #functions
 def parse(url):
     
-    driver = webdriver.Chrome(r'C:\Users\antho\Downloads\chromedriver.exe')
+    driver = webdriver.Chrome(r'C:/Python38/Lib/site-packages/selenium/webdriver/chrome/chromedriver.exe')
     driver.get(url)
     try:
         WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.CSS_SELECTOR , "id"))) 
@@ -35,7 +35,7 @@ soup = parse(URL)
 # match_container = soup.find_all("td", class_="coupon-runners")
 # #match_bet = match_container.find("button", class_="bf-bet-button back-button back-selection-button")
 
-print(soup.prettify())
+print(soup.prettify().encode("utf-8"))
 
 
 
