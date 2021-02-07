@@ -1,1 +1,13 @@
+This is a little mini project script that helps out with MTG on Tabletop Simulator
 
+Decklists can be imported as text from the below websites
+https://tappedout.net/
+
+Problem is it also includes edition tags etc that TabletopSimulator doesn't play nice with
+
+This script parses out those additional tags so you can import the deck with no issue and get started playing asap!
+
+Inlucdes:
+Ease of use with drag and drop into script functionality
+Input validation
+exception handling
